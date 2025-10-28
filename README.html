@@ -1,0 +1,391 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/rosmord/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.6.7/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p,html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  300px/2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="-tp-03--rappels-de-conception-objet">TP 03 : rappels de conception objet</h1>
+
+<h1 class="mume-header" id="-exercice--supression-du-couplage">Exercice : Supression du couplage</h1>
+
+<h2 class="mume-header" id="-question-1">Question 1</h2>
+
+<p>Un logiciel de calcul a besoin de <em>logger</em> ses &#xE9;tapes &#xE0; des fins de v&#xE9;rification. Dans cette optique, nous avons l&apos;impl&#xE9;mentation qui se trouve quand le package <code>exo1q1v1</code>.</p>
+<p>On s&apos;aper&#xE7;oit que la classe <code>FileLogger</code> que nous utilisons<br>
+ne sera pas forc&#xE9;ment toujours appropri&#xE9;e. Par ailleurs, comme elle cr&#xE9;e un fichier, elle complique les tests du calcul.</p>
+<p>Tout d&apos;abord, posez-vous la question des exceptions telles qu&apos;elles apparaissent ici. Est-ce bien raisonnable ?</p>
+<p>Introduisez dans le package <code>exo1q1v2</code> une interface pour r&#xE9;duire le couplage, et proposez trois impl&#xE9;mentations :</p>
+<ul>
+<li>une qui ne fera rien ;</li>
+<li>une qui conservera les affichages en m&#xE9;moire (dans une <code>ArrayList</code>, ce qui peut &#xEA;tre pratique pour du test) ;</li>
+<li>et l&apos;impl&#xE9;mentation de d&#xE9;part.</li>
+</ul>
+<p>Dans votre nouvelle version, o&#xF9; doit &#xEA;tre cr&#xE9;&#xE9; le <em>logger</em> ?</p>
+<h2 class="mume-header" id="-question-2">Question 2</h2>
+
+<p>On a cr&#xE9;&#xE9; une classe <code>Catalogue</code> pour repr&#xE9;senter un<br>
+catalogue de produits, et on a besoin de produire une version XML de ce catalogue. On a donc l&apos;impl&#xE9;mentation que vous trouverez dans <code>exo1q2v1</code>.</p>
+<p>Le couplage entre le <code>Catalogue</code> et la classe <code>XMLDumper</code> n&apos;est pas souhaitable. On pourrait &#xE9;videmment l&apos;inverser (en s&apos;arrangeant pour que le <code>Catalogue</code> soit appel&#xE9; par <code>XMLDumper</code> et non l&apos;inverse), mais on souhaite disposer d&apos;une m&#xE9;thode g&#xE9;n&#xE9;rique et commode d&apos;exportation du catalogue dans divers formats.</p>
+<p>R&#xE9;fl&#xE9;chissez &#xE0; l&apos;approche possible, proposez une architecture (qui demandera des modifications plus importantes que dans la question 1), et impl&#xE9;mentez-la.</p>
+<p>V&#xE9;rifiez que votre architecture tient la route en proposant :</p>
+<ul>
+<li>une impl&#xE9;mentation qui produit du <code>JSON</code> (vous pouvez faire &#xE9;ventuellement l&apos;impasse sur les probl&#xE8;mes &#xE9;ventuels de caract&#xE8;res sp&#xE9;ciaux) ;</li>
+<li>(si vous avez le temps, et apr&#xE8;s l&apos;exercice 2) : une impl&#xE9;mentation qui produit du <code>YAML</code> (indication : pour ce format, il faudra stocker la &quot;profondeur&quot; d&apos;&#xE9;criture comme variable d&apos;instance).</li>
+</ul>
+<h1 class="mume-header" id="-exercice-2--loi-de-d%C3%A9m%C3%A9ter">Exercice 2 : loi de D&#xE9;m&#xE9;ter</h1>
+
+<h2 class="mume-header" id="-question-1-1">Question 1</h2>
+
+<p>On a l&apos;architecture suivante dans le logiciel qui d&#xE9;crit l&apos;architecture d&apos;une entreprise :</p>
+<p><!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" contentscripttype="application/ecmascript" contentstyletype="text/css" height="377px" preserveAspectRatio="none" style="width:404px;height:377px;background:#FFFFFF;" version="1.1" viewBox="0 0 404 377" width="404px" zoomAndPan="magnify"><defs><filter height="300%" id="f1pj63k55ejfr7" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[5af42e8deca470f7497af2ac1ff748b8]
+class Employé--><rect codeline="1" fill="#FEFECE" filter="url(#f1pj63k55ejfr7)" height="60.9551" id="Employ&#xE9;" style="stroke:#A80036;stroke-width:1.5;" width="81" x="272" y="303"/><ellipse cx="287" cy="319" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M289.4731,325.1431 Q288.8921,325.4419 288.2529,325.5913 Q287.6138,325.7407 286.9082,325.7407 Q284.4014,325.7407 283.0815,324.0889 Q281.7617,322.437 281.7617,319.3159 Q281.7617,316.1865 283.0815,314.5347 Q284.4014,312.8828 286.9082,312.8828 Q287.6138,312.8828 288.2612,313.0322 Q288.9087,313.1816 289.4731,313.4805 L289.4731,316.2031 Q288.8423,315.6221 288.2488,315.3523 Q287.6553,315.0825 287.0244,315.0825 Q285.6797,315.0825 284.9949,316.1492 Q284.3101,317.2158 284.3101,319.3159 Q284.3101,321.4077 284.9949,322.4744 Q285.6797,323.541 287.0244,323.541 Q287.6553,323.541 288.2488,323.2712 Q288.8423,323.0015 289.4731,322.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="49" x="301" y="323.5352">Employ&#xE9;</text><line style="stroke:#A80036;stroke-width:1.5;" x1="273" x2="352" y1="335" y2="335"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="24" x="278" y="349.6348">nom</text><line style="stroke:#A80036;stroke-width:1.5;" x1="273" x2="352" y1="355.9551" y2="355.9551"/><!--MD5=[e5da348f9a286ac789819f64e84f1dc7]
+class Entreprise--><rect fill="#FEFECE" filter="url(#f1pj63k55ejfr7)" height="48" id="Entreprise" style="stroke:#A80036;stroke-width:1.5;" width="91" x="7" y="7"/><ellipse cx="22" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M24.4731,29.1431 Q23.8921,29.4419 23.2529,29.5913 Q22.6138,29.7407 21.9082,29.7407 Q19.4014,29.7407 18.0815,28.0889 Q16.7617,26.437 16.7617,23.3159 Q16.7617,20.1865 18.0815,18.5347 Q19.4014,16.8828 21.9082,16.8828 Q22.6138,16.8828 23.2612,17.0322 Q23.9087,17.1816 24.4731,17.4805 L24.4731,20.2031 Q23.8423,19.6221 23.2488,19.3523 Q22.6553,19.0825 22.0244,19.0825 Q20.6797,19.0825 19.9949,20.1492 Q19.3101,21.2158 19.3101,23.3159 Q19.3101,25.4077 19.9949,26.4744 Q20.6797,27.541 22.0244,27.541 Q22.6553,27.541 23.2488,27.2712 Q23.8423,27.0015 24.4731,26.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="59" x="36" y="27.5352">Entreprise</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="97" y1="39" y2="39"/><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="97" y1="47" y2="47"/><!--MD5=[4f55c96b067bf11c6005dd589f40464b]
+class Département--><rect fill="#FEFECE" filter="url(#f1pj63k55ejfr7)" height="48" id="D&#xE9;partement" style="stroke:#A80036;stroke-width:1.5;" width="108" x="133.5" y="7"/><ellipse cx="148.5" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M150.9731,29.1431 Q150.3921,29.4419 149.7529,29.5913 Q149.1138,29.7407 148.4082,29.7407 Q145.9014,29.7407 144.5815,28.0889 Q143.2617,26.437 143.2617,23.3159 Q143.2617,20.1865 144.5815,18.5347 Q145.9014,16.8828 148.4082,16.8828 Q149.1138,16.8828 149.7612,17.0322 Q150.4087,17.1816 150.9731,17.4805 L150.9731,20.2031 Q150.3423,19.6221 149.7488,19.3523 Q149.1553,19.0825 148.5244,19.0825 Q147.1797,19.0825 146.4949,20.1492 Q145.8101,21.2158 145.8101,23.3159 Q145.8101,25.4077 146.4949,26.4744 Q147.1797,27.541 148.5244,27.541 Q149.1553,27.541 149.7488,27.2712 Q150.3423,27.0015 150.9731,26.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="76" x="162.5" y="27.5352">D&#xE9;partement</text><line style="stroke:#A80036;stroke-width:1.5;" x1="134.5" x2="240.5" y1="39" y2="39"/><line style="stroke:#A80036;stroke-width:1.5;" x1="134.5" x2="240.5" y1="47" y2="47"/><!--MD5=[dbb8b4f13c7b21394f9d757e58732f45]
+class Service--><rect fill="#FEFECE" filter="url(#f1pj63k55ejfr7)" height="48" id="Service" style="stroke:#A80036;stroke-width:1.5;" width="72" x="276.5" y="7"/><ellipse cx="291.5" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M293.9731,29.1431 Q293.3921,29.4419 292.7529,29.5913 Q292.1138,29.7407 291.4082,29.7407 Q288.9014,29.7407 287.5815,28.0889 Q286.2617,26.437 286.2617,23.3159 Q286.2617,20.1865 287.5815,18.5347 Q288.9014,16.8828 291.4082,16.8828 Q292.1138,16.8828 292.7612,17.0322 Q293.4087,17.1816 293.9731,17.4805 L293.9731,20.2031 Q293.3423,19.6221 292.7488,19.3523 Q292.1553,19.0825 291.5244,19.0825 Q290.1797,19.0825 289.4949,20.1492 Q288.8101,21.2158 288.8101,23.3159 Q288.8101,25.4077 289.4949,26.4744 Q290.1797,27.541 291.5244,27.541 Q292.1553,27.541 292.7488,27.2712 Q293.3423,27.0015 293.9731,26.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="40" x="305.5" y="27.5352">Service</text><line style="stroke:#A80036;stroke-width:1.5;" x1="277.5" x2="347.5" y1="39" y2="39"/><line style="stroke:#A80036;stroke-width:1.5;" x1="277.5" x2="347.5" y1="47" y2="47"/><!--MD5=[812dbbef2ae005a8949d280fdf4d98e8]
+class Equipe--><rect fill="#FEFECE" filter="url(#f1pj63k55ejfr7)" height="48" id="Equipe" style="stroke:#A80036;stroke-width:1.5;" width="72" x="276.5" y="116"/><ellipse cx="291.5" cy="132" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M293.9731,138.1431 Q293.3921,138.4419 292.7529,138.5913 Q292.1138,138.7407 291.4082,138.7407 Q288.9014,138.7407 287.5815,137.0889 Q286.2617,135.437 286.2617,132.3159 Q286.2617,129.1865 287.5815,127.5347 Q288.9014,125.8828 291.4082,125.8828 Q292.1138,125.8828 292.7612,126.0322 Q293.4087,126.1816 293.9731,126.4805 L293.9731,129.2031 Q293.3423,128.6221 292.7488,128.3523 Q292.1553,128.0825 291.5244,128.0825 Q290.1797,128.0825 289.4949,129.1492 Q288.8101,130.2158 288.8101,132.3159 Q288.8101,134.4077 289.4949,135.4744 Q290.1797,136.541 291.5244,136.541 Q292.1553,136.541 292.7488,136.2712 Q293.3423,136.0015 293.9731,135.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="40" x="305.5" y="136.5352">Equipe</text><line style="stroke:#A80036;stroke-width:1.5;" x1="277.5" x2="347.5" y1="148" y2="148"/><line style="stroke:#A80036;stroke-width:1.5;" x1="277.5" x2="347.5" y1="156" y2="156"/><!--MD5=[65629700f8d51d63cb8adfc755e341b8]
+reverse link Entreprise to Département--><path codeline="4" d="M112.79,31 C119.59,31 126.39,31 133.19,31 " fill="none" id="Entreprise-backto-D&#xE9;partement" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="99.89,31,105.89,35,111.89,31,105.89,27,99.89,31" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[9fbf2e7b9db8962fb1db1fbb121b2cb2]
+reverse link Département to Service--><path codeline="5" d="M256.01,31 C262.77,31 269.52,31 276.27,31 " fill="none" id="D&#xE9;partement-backto-Service" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="243.21,31,249.21,35,255.21,31,249.21,27,243.21,31" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[58e0c8365cae56388ceaaf4970c65572]
+reverse link Service to Equipe--><path codeline="6" d="M312.5,69.89 C312.5,85.12 312.5,102.2 312.5,115.57 " fill="none" id="Service-backto-Equipe" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="312.5,57,308.5,63,312.5,69,316.5,63,312.5,57" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[c65033cec1e9ea1c262cccf2297ea261]
+reverse link Equipe to Employé--><path codeline="7" d="M312.5,178.83 C312.5,215.1 312.5,269.14 312.5,302.53 " fill="none" id="Equipe-backto-Employ&#xE9;" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="312.5,166,308.5,172,312.5,178,316.5,172,312.5,166" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[99c859acb52606d00a14054d21ebdba4]
+link Equipe to Employé--><path codeline="8" d="M324.53,164.38 C328.54,173.39 332.49,183.94 334.5,194 C341.36,228.43 340.69,238.44 334.5,273 C333.09,280.86 330.72,289.04 328.04,296.73 " fill="none" id="Equipe-to-Employ&#xE9;" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="326.45,301.08,333.2727,293.9772,328.1507,296.3781,325.7497,291.2561,326.45,301.08" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="56" x="340.5" y="238.5684">directeur</text><!--MD5=[9e065546176a568d35ff3f005eb35442]
+@startuml
+class Employé {
+    nom
+}
+Entreprise o- Département
+Département o- Service
+Service o- - Equipe
+Equipe o- - - Employé
+Equipe - -> Employé : directeur
+@enduml
+
+PlantUML version 1.2021.12(Tue Oct 05 18:01:58 CEST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: fr
+Country: FR
+--></g></svg></p><p>Dans le source de l&apos;exercice, vous trouverez une m&#xE9;thode qui vise &#xE0; retourner les noms des directeurs d&apos;&#xE9;quipe.</p>
+<ul>
+<li>Respecte-t-elle la loi de D&#xE9;m&#xE9;ter ? Pourquoi ?</li>
+<li>Proposez et impl&#xE9;mentez une solution simple ;</li>
+</ul>
+<h2 class="mume-header" id="-question-2-1">Question 2</h2>
+
+<p>On suppose maintenant qu&apos;on s&apos;aper&#xE7;oit qu&apos;il n&apos;y a pas que les &#xE9;quipes qui ont un directeur. On a en fait :</p>
+<p><!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" contentscripttype="application/ecmascript" contentstyletype="text/css" height="190px" preserveAspectRatio="none" style="width:493px;height:190px;background:#FFFFFF;" version="1.1" viewBox="0 0 493 190" width="493px" zoomAndPan="magnify"><defs><filter height="300%" id="fkgjnhi7072k0" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[1e7fa8202eb4b40076c1cf2be883d821]
+class AvecDirecteur--><rect codeline="1" fill="#FEFECE" filter="url(#fkgjnhi7072k0)" height="48" id="AvecDirecteur" style="stroke:#A80036;stroke-width:1.5;" width="112" x="193.5" y="122.5"/><ellipse cx="208.5" cy="138.5" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M204.9277,134.7651 L204.9277,132.6069 L212.3071,132.6069 L212.3071,134.7651 L209.8418,134.7651 L209.8418,142.8418 L212.3071,142.8418 L212.3071,145 L204.9277,145 L204.9277,142.8418 L207.3931,142.8418 L207.3931,134.7651 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="80" x="222.5" y="143.0352">AvecDirecteur</text><line style="stroke:#A80036;stroke-width:1.5;" x1="194.5" x2="304.5" y1="154.5" y2="154.5"/><line style="stroke:#A80036;stroke-width:1.5;" x1="194.5" x2="304.5" y1="162.5" y2="162.5"/><!--MD5=[5af42e8deca470f7497af2ac1ff748b8]
+class Employé--><rect codeline="3" fill="#FEFECE" filter="url(#fkgjnhi7072k0)" height="60.9551" id="Employ&#xE9;" style="stroke:#A80036;stroke-width:1.5;" width="81" x="398" y="116"/><ellipse cx="413" cy="132" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M415.4731,138.1431 Q414.8921,138.4419 414.2529,138.5913 Q413.6138,138.7407 412.9082,138.7407 Q410.4014,138.7407 409.0815,137.0889 Q407.7617,135.437 407.7617,132.3159 Q407.7617,129.1865 409.0815,127.5347 Q410.4014,125.8828 412.9082,125.8828 Q413.6138,125.8828 414.2612,126.0322 Q414.9087,126.1816 415.4731,126.4805 L415.4731,129.2031 Q414.8423,128.6221 414.2488,128.3523 Q413.6553,128.0825 413.0244,128.0825 Q411.6797,128.0825 410.9949,129.1492 Q410.3101,130.2158 410.3101,132.3159 Q410.3101,134.4077 410.9949,135.4744 Q411.6797,136.541 413.0244,136.541 Q413.6553,136.541 414.2488,136.2712 Q414.8423,136.0015 415.4731,135.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="49" x="427" y="136.5352">Employ&#xE9;</text><line style="stroke:#A80036;stroke-width:1.5;" x1="399" x2="478" y1="148" y2="148"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="24" x="404" y="162.6348">nom</text><line style="stroke:#A80036;stroke-width:1.5;" x1="399" x2="478" y1="168.9551" y2="168.9551"/><!--MD5=[e5da348f9a286ac789819f64e84f1dc7]
+class Entreprise--><rect fill="#FEFECE" filter="url(#fkgjnhi7072k0)" height="48" id="Entreprise" style="stroke:#A80036;stroke-width:1.5;" width="91" x="7" y="7"/><ellipse cx="22" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M24.4731,29.1431 Q23.8921,29.4419 23.2529,29.5913 Q22.6138,29.7407 21.9082,29.7407 Q19.4014,29.7407 18.0815,28.0889 Q16.7617,26.437 16.7617,23.3159 Q16.7617,20.1865 18.0815,18.5347 Q19.4014,16.8828 21.9082,16.8828 Q22.6138,16.8828 23.2612,17.0322 Q23.9087,17.1816 24.4731,17.4805 L24.4731,20.2031 Q23.8423,19.6221 23.2488,19.3523 Q22.6553,19.0825 22.0244,19.0825 Q20.6797,19.0825 19.9949,20.1492 Q19.3101,21.2158 19.3101,23.3159 Q19.3101,25.4077 19.9949,26.4744 Q20.6797,27.541 22.0244,27.541 Q22.6553,27.541 23.2488,27.2712 Q23.8423,27.0015 24.4731,26.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="59" x="36" y="27.5352">Entreprise</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="97" y1="39" y2="39"/><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="97" y1="47" y2="47"/><!--MD5=[4f55c96b067bf11c6005dd589f40464b]
+class Département--><rect fill="#FEFECE" filter="url(#fkgjnhi7072k0)" height="48" id="D&#xE9;partement" style="stroke:#A80036;stroke-width:1.5;" width="108" x="133.5" y="7"/><ellipse cx="148.5" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M150.9731,29.1431 Q150.3921,29.4419 149.7529,29.5913 Q149.1138,29.7407 148.4082,29.7407 Q145.9014,29.7407 144.5815,28.0889 Q143.2617,26.437 143.2617,23.3159 Q143.2617,20.1865 144.5815,18.5347 Q145.9014,16.8828 148.4082,16.8828 Q149.1138,16.8828 149.7612,17.0322 Q150.4087,17.1816 150.9731,17.4805 L150.9731,20.2031 Q150.3423,19.6221 149.7488,19.3523 Q149.1553,19.0825 148.5244,19.0825 Q147.1797,19.0825 146.4949,20.1492 Q145.8101,21.2158 145.8101,23.3159 Q145.8101,25.4077 146.4949,26.4744 Q147.1797,27.541 148.5244,27.541 Q149.1553,27.541 149.7488,27.2712 Q150.3423,27.0015 150.9731,26.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="76" x="162.5" y="27.5352">D&#xE9;partement</text><line style="stroke:#A80036;stroke-width:1.5;" x1="134.5" x2="240.5" y1="39" y2="39"/><line style="stroke:#A80036;stroke-width:1.5;" x1="134.5" x2="240.5" y1="47" y2="47"/><!--MD5=[dbb8b4f13c7b21394f9d757e58732f45]
+class Service--><rect fill="#FEFECE" filter="url(#fkgjnhi7072k0)" height="48" id="Service" style="stroke:#A80036;stroke-width:1.5;" width="72" x="276.5" y="7"/><ellipse cx="291.5" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M293.9731,29.1431 Q293.3921,29.4419 292.7529,29.5913 Q292.1138,29.7407 291.4082,29.7407 Q288.9014,29.7407 287.5815,28.0889 Q286.2617,26.437 286.2617,23.3159 Q286.2617,20.1865 287.5815,18.5347 Q288.9014,16.8828 291.4082,16.8828 Q292.1138,16.8828 292.7612,17.0322 Q293.4087,17.1816 293.9731,17.4805 L293.9731,20.2031 Q293.3423,19.6221 292.7488,19.3523 Q292.1553,19.0825 291.5244,19.0825 Q290.1797,19.0825 289.4949,20.1492 Q288.8101,21.2158 288.8101,23.3159 Q288.8101,25.4077 289.4949,26.4744 Q290.1797,27.541 291.5244,27.541 Q292.1553,27.541 292.7488,27.2712 Q293.3423,27.0015 293.9731,26.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="40" x="305.5" y="27.5352">Service</text><line style="stroke:#A80036;stroke-width:1.5;" x1="277.5" x2="347.5" y1="39" y2="39"/><line style="stroke:#A80036;stroke-width:1.5;" x1="277.5" x2="347.5" y1="47" y2="47"/><!--MD5=[812dbbef2ae005a8949d280fdf4d98e8]
+class Equipe--><rect fill="#FEFECE" filter="url(#fkgjnhi7072k0)" height="48" id="Equipe" style="stroke:#A80036;stroke-width:1.5;" width="72" x="383.5" y="7"/><ellipse cx="398.5" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M400.9731,29.1431 Q400.3921,29.4419 399.7529,29.5913 Q399.1138,29.7407 398.4082,29.7407 Q395.9014,29.7407 394.5815,28.0889 Q393.2617,26.437 393.2617,23.3159 Q393.2617,20.1865 394.5815,18.5347 Q395.9014,16.8828 398.4082,16.8828 Q399.1138,16.8828 399.7612,17.0322 Q400.4087,17.1816 400.9731,17.4805 L400.9731,20.2031 Q400.3423,19.6221 399.7488,19.3523 Q399.1553,19.0825 398.5244,19.0825 Q397.1797,19.0825 396.4949,20.1492 Q395.8101,21.2158 395.8101,23.3159 Q395.8101,25.4077 396.4949,26.4744 Q397.1797,27.541 398.5244,27.541 Q399.1553,27.541 399.7488,27.2712 Q400.3423,27.0015 400.9731,26.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="40" x="412.5" y="27.5352">Equipe</text><line style="stroke:#A80036;stroke-width:1.5;" x1="384.5" x2="454.5" y1="39" y2="39"/><line style="stroke:#A80036;stroke-width:1.5;" x1="384.5" x2="454.5" y1="47" y2="47"/><!--MD5=[13c34d4a0bbb6d4351333065532b75e5]
+link AvecDirecteur to Employé--><path codeline="2" d="M305.95,146.5 C333.12,146.5 365.34,146.5 391.2,146.5 " fill="none" id="AvecDirecteur-to-Employ&#xE9;" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="396.12,146.5,387.12,142.5,391.12,146.5,387.12,150.5,396.12,146.5" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="56" x="323.75" y="140.0684">directeur</text><!--MD5=[65629700f8d51d63cb8adfc755e341b8]
+reverse link Entreprise to Département--><path codeline="6" d="M112.79,31 C119.59,31 126.39,31 133.19,31 " fill="none" id="Entreprise-backto-D&#xE9;partement" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="99.89,31,105.89,35,111.89,31,105.89,27,99.89,31" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[9fbf2e7b9db8962fb1db1fbb121b2cb2]
+reverse link Département to Service--><path codeline="7" d="M256.01,31 C262.77,31 269.52,31 276.27,31 " fill="none" id="D&#xE9;partement-backto-Service" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="243.21,31,249.21,35,255.21,31,249.21,27,243.21,31" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[58e0c8365cae56388ceaaf4970c65572]
+reverse link Service to Equipe--><path codeline="8" d="M363.3,31 C369.89,31 376.48,31 383.08,31 " fill="none" id="Service-backto-Equipe" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="350.38,31,356.38,35,362.38,31,356.38,27,350.38,31" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a9fd85b59f3d207ced9764b8644b9a8d]
+link Entreprise to AvecDirecteur--><path codeline="10" d="M92.84,55.24 C120.9,71.41 158.77,93.23 190.25,111.36 " fill="none" id="Entreprise-to-AvecDirecteur" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="193.73,105.29,207.56,121.34,186.74,117.42,193.73,105.29" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[71d4584b0c352995e52d745fc41d35d8]
+link Département to AvecDirecteur--><path codeline="11" d="M200.2,55.24 C207.8,69.17 217.7,87.28 226.63,103.63 " fill="none" id="D&#xE9;partement-to-AvecDirecteur" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="232.65,100.05,236.1,120.96,220.36,106.76,232.65,100.05" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[7250e3cc48654d7622ca8575785cf664]
+link Service to AvecDirecteur--><path codeline="12" d="M299.6,55.24 C291.87,69.17 281.81,87.28 272.74,103.63 " fill="none" id="Service-to-AvecDirecteur" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="278.95,106.88,263.12,120.97,266.7,100.08,278.95,106.88" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[608efb8d3ea03e3cb5b8baaabea4d08d]
+link Equipe to AvecDirecteur--><path codeline="13" d="M384.69,55.24 C360.93,71.1 329.03,92.41 302.18,110.33 " fill="none" id="Equipe-to-AvecDirecteur" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="306.34,115.97,285.82,121.25,298.56,104.33,306.34,115.97" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[c8f84666144102ba2c450a6baee523e2]
+@startuml
+Interface AvecDirecteur
+AvecDirecteur -> Employé : directeur
+class Employé {
+    nom
+}
+Entreprise o- Département
+Département o- Service
+Service o- Equipe
+
+Entreprise - -|> AvecDirecteur
+Département - -|> AvecDirecteur
+Service - -|> AvecDirecteur
+Equipe - -|> AvecDirecteur
+@enduml
+
+PlantUML version 1.2021.12(Tue Oct 05 18:01:58 CEST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: fr
+Country: FR
+--></g></svg></p><p>Que devient votre code dans ce cas, si vous voulez &#xEA;tre logique ?</p>
+<p>Proposez &#xE9;ventuellement une refonte de l&apos;architecture (plusieurs solutions sont possibles. Nous reprendrons &#xE9;ventuellement cet exemple au moment o&#xF9; nous parlerons des <strong>Visiteurs</strong>)</p>
+<h2 class="mume-header" id="-remarque">Remarque</h2>
+
+<p>Pour cr&#xE9;er un site web avec le rapport de test, utiliser la commande en ligne :<br>
+mvn surefire-report:report</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
