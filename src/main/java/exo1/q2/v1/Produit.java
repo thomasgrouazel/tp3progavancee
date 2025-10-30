@@ -16,4 +16,12 @@ public class Produit {
     public double getPrix() {
         return prix;
     }
+
+    @Override
+    public String toString() {
+        return "Produit{" +
+                "designation='" + designation + '\'' +
+                ", prix=" + prix +
+                '}';
+    }
 }

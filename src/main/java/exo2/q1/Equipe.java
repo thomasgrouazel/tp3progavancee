@@ -1,13 +1,14 @@
 package exo2.q1;
 
-public class Equipe {
+public class Equipe implements EquipeInterface {
     private final Employé directeur;
 
     public Equipe(Employé directeur) {
         this.directeur = directeur;
     }
 
-    public Employé getDirecteur() {
-        return directeur;
+    @Override
+    public String getNomDirecteur() {
+        return directeur != null ? directeur.getNom() : null;
     }
 }

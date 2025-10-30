@@ -13,8 +13,4 @@ public class Catalogue {
     public List<Produit> getProduits() {
         return produits;
     }
-
-    public String exporter(CatalogueExporter exporter) {
-        return exporter.export(this);
-    }
 }
